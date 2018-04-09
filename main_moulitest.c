@@ -3,6 +3,11 @@
 int		main(void)
 {
 	char	c;
+	int		ft_p;
+	int		p;
+
+	ft_p = 0;
+	p = 0;
 /*	printf("%.0p, %.p", 0, 0);
 	printf("%.5p", 0);
 	printf("%2.9p", 1234);
@@ -165,8 +170,13 @@ int		main(void)
 //	printf("[%d]", ft_printf("%hhS, %hhS", 0, L"米米"));
 //	printf("[%d]", ft_printf("%hhC, %hhC", 0, L'米'));
 //	printf("[%d]", printf("%S", L"我是一只猫。"));
-	printf("[%d]", ft_printf("{%S}", L"我是一只猫。"));
+//	printf("[%d]", ft_printf("{%S}", L"我是一只猫。"));
 //	printf("[%d]", printf("%030S", L"我是一只猫。"));
-	printf("[%d]", ft_printf("{%030S}", L"我是一只猫。"));
+//	printf("[%d]", ft_printf("{%030S}", L"我是一只猫。"));
+	printf("ft_p est [%d] et p est [%d]\n", ft_p, p);
+	ft_p = ft_printf("%05p", 0);
+	printf("ft_p est [%d] et p est [%d]\n", ft_p, p);
+	p = printf("%05p", 0);
+	printf("ft_p est [%d] et p est [%d]\n", ft_p, p);
 	return (0);
 }

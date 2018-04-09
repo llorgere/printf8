@@ -12,6 +12,8 @@
 
 NAME = libftprintf.a
 SRC = ft_printf.c \
+	  ft_uniconv.c \
+	  ft_uitoa_bin.c \
 	  ft_strncpypf.c \
 	  ft_strncatpf.c \
 	  ft_pc_conv.c \

@@ -58,6 +58,8 @@ typedef struct
 	char	*tab;
 }					spe_c;
 
+unsigned char		*ft_uniconv(char *bin);
+char				*ft_uitoa_bin(unsigned int n);
 char				*ft_nstrdup(const char *s, size_t n);
 spe_c				ft_special_c(char *str, flag_type flag);
 void				ft_nputstr(char const *s, int n);
